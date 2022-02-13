@@ -36,9 +36,15 @@ body {
 /* FIRST SECTION */
 #first-section {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+}
+
+#first-section > * {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 25rem;
 }
 
 /* INTRODUCTORY */
@@ -53,7 +59,7 @@ body {
     line-height: 1;
     max-width: 50rem;
     color: var(--very-dark-magenta);
-    font-size: clamp(2.5rem, 10vw, 6rem);
+    font-size: clamp(2.5rem, 10vw, 5rem);
 }
 
 /* DESCRIPTION */
@@ -68,14 +74,18 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    width: 100%;
+    max-width: 55rem;
 }
 
 /* RATE */
 .rate {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    flex-wrap: wrap;
+    gap: 2.5rem;
     padding: 2rem;
+    flex-shrink: 1;
     font-weight: bold;
     font-size: 1.5rem;
     border-radius: 1rem;
@@ -83,13 +93,19 @@ body {
 }
 
 .rate:nth-of-type(1) {
-    transform: translateX(-15rem);
+    align-self: flex-start;
 }
 
 .rate:nth-of-type(2) {
-    transform: translateX(-10rem);
+    align-self: center;
 }
 
 .rate:nth-of-type(3) {
-    transform: translateX(-5rem);
+    align-self: flex-end;
+}
+
+/* STARS */
+.stars {
+    display: flex;
+    gap: 1.5rem;
 }

@@ -33,3 +33,18 @@
         width: 1320px;
     }
 }
+
+/* FIRST-SECTION & AVALIATION */
+@media (max-width: 768px) {
+    #first-section {
+        gap: 3rem;
+    }
+
+    #first-section > * {
+        text-align: center;
+    }
+
+    #avaliation > * {
+        justify-content: center;
+    }
+}
