@@ -121,7 +121,7 @@ body {
     display: flex;
     gap: 3rem;
     flex-wrap: wrap;
-    height: 25rem;
+    height: 26rem;
 }
 
 #last-section > * {
