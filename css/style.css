@@ -27,8 +27,8 @@ body {
     background-repeat: no-repeat;
     background-position: left 10rem top, right 10rem bottom;
     background-image: 
-    url(../images/bg-pattern-top-desktop.svg), 
-    url(../images/bg-pattern-bottom-desktop.svg);
+    url(/images/bg-pattern-top-desktop.svg), 
+    url(/images/bg-pattern-bottom-desktop.svg);
 }
 
 /* CONTAINER CLASS */
