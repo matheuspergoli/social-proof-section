@@ -36,6 +36,10 @@
 
 /* FIRST-SECTION & AVALIATION */
 @media (max-width: 768px) {
+    #main-content {
+        gap: 5rem;
+    }
+
     #first-section {
         gap: 3rem;
     }

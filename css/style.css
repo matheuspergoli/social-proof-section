@@ -29,8 +29,14 @@ body {
 /* CONTAINER CLASS */
 .container {
     margin: auto;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding: 1.5rem;
+}
+
+/* MAIN CONTENT*/
+#main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
 }
 
 /* FIRST SECTION */
@@ -86,7 +92,7 @@ body {
     gap: 2.5rem;
     padding: 2rem;
     flex-shrink: 1;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.5rem;
     border-radius: 1rem;
     background-color: var(--light-grayish-magenta);
@@ -108,4 +114,61 @@ body {
 .stars {
     display: flex;
     gap: 1.5rem;
+}
+
+/* LAST SECTION */
+#last-section {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+#last-section > * {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 25rem;
+}
+
+/* FEEDBACK CARD */
+.feedback-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+    border-radius: 1rem;
+    background-color: var(--very-dark-magenta);
+}
+
+/* CARD INFO */
+.card-info {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* PERFIL IMAGE */
+.perfil-img {
+    width: 6rem;
+    border-radius: 50%;
+}
+
+/* NAME */
+.name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
+/* VERIFICATION */
+.verification {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--soft-pink);
+}
+
+/* DEPOIMENT */
+.depoiment {
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--white);
 }
